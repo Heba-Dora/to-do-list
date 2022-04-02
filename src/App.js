@@ -5,19 +5,19 @@ function App() {
     {
       id : 0,
       title: 'Car Insurance',
-      Date : new Date(2022, 4, 2),
+      date : new Date(2022, 4, 2),
       price: 193,
     },
     {
       id : 0,
       title: 'Car Insurance',
-      Date : new Date(2022, 4, 2),
+      date : new Date(2022, 4, 2),
       price: 193,
     },
     {
       id : 0,
       title: 'Car Insurance',
-      Date : new Date(2022, 4, 2),
+      date : new Date(2022, 4, 2),
       price: 193,
     }
   ]
@@ -28,7 +28,7 @@ function App() {
         <ExpenseItem
         title={item.title}
         price={item.price}
-        data={item.price}
+        date={item.date}
         />
        
        
@@ -40,3 +40,5 @@ function App() {
 }
 
 export default App;
+
+
