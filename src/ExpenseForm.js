@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './ExpenseForm.css'
 
-function ExpenseForm() {
+function ExpenseForm(props) {
     const [title, setTitle]= useState('')
     const [amount, setAmount]= useState('')
     const [date, setDate]= useState('')
@@ -30,14 +30,16 @@ function ExpenseForm() {
             date: new Date(date)
 
         }
-        console.log(expenseData)
+        props.onSaveExpenseData(expenseData);
         setTitle('')
         setAmount('')
         setDate('')
+        
+       
 
     }
+    
   return (
-    <div className='new-expense'>
     <form onSubmit={submitHandler}>
         <div className='new-expense__controls'>
             <div className='new-expense__control'>
@@ -58,7 +60,6 @@ function ExpenseForm() {
         </div>
         
     </form>
-    </div>
   )
 }
 
