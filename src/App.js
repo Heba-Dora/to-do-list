@@ -12,13 +12,13 @@ const dummy_expenses = [
   {
     id : 1,
     title: 'Car color',
-    date : new Date(2022, 4, 2),
+    date : new Date(2020, 1, 2),
     amount: 180,
   },
   {
     id : 2,
     title: 'Car Maintenance',
-    date : new Date(2022, 4, 2),
+    date : new Date(2021, 12, 20),
     amount: 146,
   }
 ]
