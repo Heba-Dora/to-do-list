@@ -7,19 +7,19 @@ const dummy_expenses = [
     id : 0,
     title: 'Car Insurance',
     date : new Date(2022, 4, 2),
-    price: 193,
+    amount: 193,
   },
   {
-    id : 0,
-    title: 'Car Insurance',
+    id : 1,
+    title: 'Car color',
     date : new Date(2022, 4, 2),
-    price: 193,
+    amount: 180,
   },
   {
-    id : 0,
-    title: 'Car Insurance',
+    id : 2,
+    title: 'Car Maintenance',
     date : new Date(2022, 4, 2),
-    price: 193,
+    amount: 146,
   }
 ]
 
