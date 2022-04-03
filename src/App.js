@@ -26,8 +26,9 @@ function App() {
     <div>
       <ExpenseForm/>
      {
-       expenses.map((item)=>
+       expenses.map((item, key)=>
         <ExpenseItem
+        id={item.key}
         title={item.title}
         price={item.price}
         date={item.date}
